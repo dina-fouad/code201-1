@@ -1,3 +1,20 @@
-img{
-    width: 90px;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+header{
+    text-align: center;
+   
 }
+
+.logo{
+    width: 90px;
+    display: block;
+    margin: auto;
+}
+
+body h2{
+    background-color: rgb(158, 115, 199);
+    color: rgb(218, 184, 140);
+}
+body{
+    font-family: 'Zen Dots', cursive;
+}
+
