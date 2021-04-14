@@ -1,9 +1,13 @@
 'use strict';
 let sum =0
+function checkName(){
 let inputName = prompt('whats your name?')
    alert('Welcome to my site ,'+inputName+'') ;
+}
+checkName();
 
 
+function checkLanguage(){
 let inputLanguage = prompt ('Did i study French language?').toLocaleLowerCase() ;
 
 if (inputLanguage === 'yes' || inputLanguage ==='y'){
@@ -15,7 +19,11 @@ alert('wrong answer');
 }else {
     alert('please enter yes or no') ;
 }
+}
+checkLanguage();
 
+
+function checkInput(){
 let input = prompt ('Did i know Hebrew?').toLocaleLowerCase() ;
 
 if (input === 'yes' || input ==='y'){
@@ -27,8 +35,10 @@ alert('wrong answer');
 }else {
     alert('please enter yes or no') ;
 }
+}
+checkInput();
 
-
+function checkWork(){
 let inputWork = prompt ('Did i work in toursim company?').toLocaleLowerCase() ;
 
 if (inputWork === 'yes' || inputWork ==='y'){
@@ -40,19 +50,26 @@ alert('wrong answer');
 }else {
     alert('please enter yes or no') ;
 }
+}
+checkWork();
+
+function checkDate(){
 
 let inputDate = prompt ('Did I graduate in 2017?').toLocaleLowerCase() ;
 
-if (inputWork === 'yes' || inputWork ==='y'){
+if (inputDate === 'yes' || inputDate ==='y'){
   sum++
 alert('wrong answer') ;
-} else if (inputWork === 'no' || inputWork ==='n'){
+} else if (inputDate === 'no' || inputDate ==='n'){
 alert('Correct answer , I graduated in 2015');
 console.log('Correct answer , I graduated in 2015') ;
 }else {
    alert('please enter yes or no') ;
 }
+}
+checkDate();
 
+function checkFood(){
 let inputFood = prompt ('Do i like Burger?').toLocaleLowerCase() ;
 
 if (inputFood === 'yes' || inputFood ==='y'){
@@ -64,30 +81,20 @@ console.log('Correct answer , I dont like it, Thank you for answering '+inputNam
 }else {
    alert('please enter yes or no , Thank you for answering '+inputName+'') ;
 }
-
-
-
-for (let i=0 ; i<4 ; i++){
-    let inputNumber = prompt('Guess the secret number in the magicians hat');
-  if(inputNumber==5){
-    sum++
-        alert('too high') ;
-        break
-}else {
-      alert('too low ') ;
 }
-
-}
-alert ('The correct answer is 5')
+checkFood();
 
 
-  let arrayName= ['paris','maldive', 'istanbul','rome','london',''];
+
+function checkLocation(){
+
+  let arrayName= ['paris','maldive', 'istanbul','rome','london','Amman',''];
   let inputPlace= ''
   
 for (let y=0 ; y<6 ;y++){
   
      inputPlace = prompt('what is the best places to visit?');
-     for (let x =0; x<arrayName.length;x++)
+     for (let x =0; x<arrayName.length;x++){
      if(inputPlace == arrayName[x]){
        sum++
         alert('correct')
@@ -99,5 +106,30 @@ for (let y=0 ; y<6 ;y++){
       alert('your answer is wrong')
     }
 }
+}
+}
+checkLocation();
+
+function checkNumber(){
+  console.log('checkNumber');
+  for (let i=0 ; i<4 ; i++){
+
+      let inputNumber = prompt('Guess the secret number in the magicians hat');
+    if(inputNumber==5){
+      sum++
+          alert('too high') ;
+          break
+  }else {
+        alert('too low ') ;
+  }
+  
+  }
+  alert ('The correct answer is 5')
+  }
+  checkNumber();
+
+
+
+
 
 alert('your score is '+sum+'of 7')
