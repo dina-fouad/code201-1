@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
 header{
     text-align: center;
    
@@ -13,8 +13,28 @@ header{
 body h2{
     background-color: rgb(158, 115, 199);
     color: rgb(218, 184, 140);
+
 }
 body{
-    font-family: 'Zen Dots', cursive;
+    font-family: 'Playfair Display', serif;
 }
 
+main ol li:nth-child(odd){
+    background-color: burlywood;
+    color: rgb(146, 74, 182);
+
+}
+.name:hover{
+    background-color: darkseagreen;
+    color: dimgray;
+}
+footer ul li{
+list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+    
+
+}
+footer{
+    text-align: center;
+}
