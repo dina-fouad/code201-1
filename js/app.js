@@ -94,7 +94,11 @@ function checkLocation(){
 for (let y=0 ; y<6 ;y++){
   
      inputPlace = prompt('what is the best places to visit?');
+<<<<<<< HEAD
      for (let x =0; x< arrayName.length;x++){
+=======
+     for (let x =0; x<arrayName.length;x++){
+>>>>>>> f73ec8ef600921f201020ad224d3737cb5cb79e3
      if(inputPlace == arrayName[x]){
        sum++
         alert('correct')
@@ -108,11 +112,19 @@ for (let y=0 ; y<6 ;y++){
     }
 }
 }
+<<<<<<< HEAD
 
 checkLocation();
 
 function checkNumber(){
   
+=======
+}
+checkLocation();
+
+function checkNumber(){
+  console.log('checkNumber');
+>>>>>>> f73ec8ef600921f201020ad224d3737cb5cb79e3
   for (let i=0 ; i<4 ; i++){
 
       let inputNumber = prompt('Guess the secret number in the magicians hat');
@@ -130,5 +142,10 @@ function checkNumber(){
   checkNumber();
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f73ec8ef600921f201020ad224d3737cb5cb79e3
 
 alert('your score is '+sum+'of 7')
