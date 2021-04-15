@@ -3,6 +3,7 @@ let sum =0
 function checkName(){
 let inputName = prompt('whats your name?')
    alert('Welcome to my site ,'+inputName+'') ;
+   alert('About Me, with a guessing game , are you ready?')
 }
 checkName();
 
@@ -13,7 +14,7 @@ let inputLanguage = prompt ('Did i study French language?').toLocaleLowerCase() 
 if (inputLanguage === 'yes' || inputLanguage ==='y'){
 alert('Correct answer , I studied French Language & Literature from The University Of Jordan') ;
 sum++
-console.log('Correct answer , I studied French Language & Literature from The University Of Jordan') ;
+
 } else if (inputLanguage === 'no' || inputLanguage ==='n'){
 alert('wrong answer');
 }else {
@@ -27,9 +28,9 @@ function checkInput(){
 let input = prompt ('Did i know Hebrew?').toLocaleLowerCase() ;
 
 if (input === 'yes' || input ==='y'){
-alert('Correct answer , I know little bit') ;
+alert('Correct answer , I know a little bit') ;
 sum++
-console.log('Correct answer , I know little bit') ;
+
 } else if (input === 'no' || input ==='n'){
 alert('wrong answer');
 }else {
@@ -44,7 +45,7 @@ let inputWork = prompt ('Did i work in toursim company?').toLocaleLowerCase() ;
 if (inputWork === 'yes' || inputWork ==='y'){
   sum++
 alert('Correct answer , I worked as a reservation agent') ;
-console.log('Correct answer , I worked as a reservation agent') ;
+
 } else if (inputWork === 'no' || inputWork ==='n'){
 alert('wrong answer');
 }else {
@@ -58,11 +59,11 @@ function checkDate(){
 let inputDate = prompt ('Did I graduate in 2017?').toLocaleLowerCase() ;
 
 if (inputDate === 'yes' || inputDate ==='y'){
-  sum++
+  
 alert('wrong answer') ;
 } else if (inputDate === 'no' || inputDate ==='n'){
 alert('Correct answer , I graduated in 2015');
-console.log('Correct answer , I graduated in 2015') ;
+sum++
 }else {
    alert('please enter yes or no') ;
 }
@@ -70,16 +71,17 @@ console.log('Correct answer , I graduated in 2015') ;
 checkDate();
 
 function checkFood(){
-let inputFood = prompt ('Do i like Burger?').toLocaleLowerCase() ;
+let inputFood = prompt ('Do i like Grand chicken Burger?').toLocaleLowerCase() ;
 
 if (inputFood === 'yes' || inputFood ==='y'){
-  sum++
+  
 alert('wrong answer') ;
 } else if (inputFood === 'no' || inputFood ==='n'){
-alert('Correct answer , I dont like it, Thank you for answering '+inputName+'');
-console.log('Correct answer , I dont like it, Thank you for answering '+inputName+'') ;
+alert('Correct answer , I dont like it, Thank you for answering ');
+sum++
+
 }else {
-   alert('please enter yes or no , Thank you for answering '+inputName+'') ;
+   alert('please enter yes or no , Thank you for answering') ;
 }
 }
 checkFood();
@@ -88,7 +90,7 @@ checkFood();
 
 function checkLocation(){
 
-  let arrayName= ['paris','maldive', 'istanbul','rome','london','Amman',''];
+  let arrayName= ['paris','maldives', 'istanbul','rome','london','Mecca'];
   let inputPlace= ''
   
 for (let y=0 ; y<6 ;y++){
@@ -102,7 +104,7 @@ for (let y=0 ; y<6 ;y++){
          break;
      }
     }if (y==5) {
-        alert('the answer are '+ arrayName)
+        alert('the answers are = '+ arrayName)
     }else if (y<6){
       alert('your answer is wrong');
     }
@@ -110,6 +112,7 @@ for (let y=0 ; y<6 ;y++){
 }
 
 checkLocation();
+
 
 function checkNumber(){
   
